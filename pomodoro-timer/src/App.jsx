@@ -7,29 +7,19 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="App">
+      <header>
+        <h1>Mi Aplicación de React</h1>
+      </header>
+      <main>
+        <p>Bienvenido a mi aplicación de React. Esta es una página de inicio de presentación.</p>
+        <p>Aquí puedes comenzar a construir tu aplicación web.</p>
+      </main>
+      <footer>
+        <p>© 2023 Tu Nombre</p>
+      </footer>
+    </div>
+  );
 }
 
 export default App
